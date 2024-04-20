@@ -79,15 +79,13 @@ wn.onkeypress(paddle_a_down, "s")
 wn.onkeypress(paddle_b_up, "Up")
 wn.onkeypress(paddle_b_down, "Down")
 
-# Main game loop
+
 while True:
     wn.update()
 
-    # Move the ball
     ball.setx(ball.xcor() + ball.dx)
     ball.sety(ball.ycor() + ball.dy)
 
-    # Ball boundary checking
     if ball.ycor() > 290:
         
         ball.sety(290)
@@ -113,7 +111,6 @@ while True:
         ball.dx *= -1
         adjust_ball_speed()
 
-    # Paddle collision
     if (ball.dx > 0) and (ball.xcor() > 340) and (paddle_b.ycor() + 50 > ball.ycor() > paddle_b.ycor() - 50):
         ball.dx *= -1
 
