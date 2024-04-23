@@ -36,7 +36,6 @@ ball.goto(0, 0)
 ball.dx = 0.1
 ball.dy = 0.1
 
-# Pen
 pen = turtle.Turtle()
 pen.speed(0)
 pen.color("white")
