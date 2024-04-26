@@ -1,4 +1,4 @@
-import turtle
+from turtle import*
 
 wn = turtle.Screen()
 wn.title("Pong")
